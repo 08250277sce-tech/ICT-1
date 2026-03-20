@@ -1,2 +1,14 @@
-user = any
-print(user)
+print('hello user')
+name = (input ("Enter your name:"));
+print("name")
+a = float(input("enter your first number:"));
+b = float(input("enter your second number:"));
+addition_result = a + b
+print(addition_result)
+subtraction_result = a - b
+print(subtraction_result)
+multiplication_result = a * b
+print(multiplication_result)
+division_result = a / b
+print(division_result)
+print("thank you for your time")
