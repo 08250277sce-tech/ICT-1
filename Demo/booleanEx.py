@@ -1,5 +1,5 @@
 a = bool(0)
-B = bool(1)
+b = bool(1)
 print(type(a))
 print(type(b))
 a = bool("")
