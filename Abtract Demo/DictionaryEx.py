@@ -2,8 +2,24 @@ userDetails = {'Id' : 1, 'userName' : 'Just_me'}
 print(type(userDetails))
 print(userDetails)
 
-location = dict(s = 'samtse', t = 'thimphu', p = 'paro')
+location = dict(s = 'Samtse', t = 'Thimphu', p = 'Paro')
 print(location)
-
+# access
 print(userDetails['userName'])
 print(location.get('t'))
+#assignment operator
+userDetails['email'] = 'Justme@example.com'
+print(userDetails)
+userDetails['userName'] = 'Just_me_updated'
+print(userDetails)             
+#Remove
+del location['p']
+print(location)
+delete_value = userDetails.pop('email')
+print(delete_value)
+del_key, del_value = userDetails.popitem()
+print(f'the delete key is {del_key} and the delete value is {del_value}')
+location.clear()
+print(location)
+    
+
