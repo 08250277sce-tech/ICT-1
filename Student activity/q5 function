@@ -1,0 +1,24 @@
+m1 = float(input("Enter the marks of first subject: "))
+m2 = float(input("Enter the marks of second subject: "))
+m3 = float(input("Enter the marks of third subject: "))
+
+def calculate_total(m1, m2, m3):
+    total = m1 + m2 + m3
+    print("The sum is:", total)
+    return total
+
+def calculate_average(m1, m2, m3):
+    average = (m1 + m2 + m3) / 3
+    print("The average of 3 marks is: %.2f" % average)
+    return average
+
+# Use the input values
+calculate_total(m1, m2, m3)
+avg = calculate_average(m1, m2, m3)
+
+if avg >= 50:
+    print("Pass")
+else:
+    print("Fail")
+
+
