@@ -1,0 +1,40 @@
+# function calling itself 
+# the recursive call itself to further move and stops the function call when it reach to solution.
+#  big problem, into smaller sub problem, until it become simple to solve 
+# base case : after  a finite of call 
+# recursive case: 
+# ensure the recursion termination
+# combine the solution
+# apllication of recursion
+# tree and graph traversal: go through each node of the particular value
+# sorting algorithm
+ 
+# n=4
+# 4+sum(4-1)---4+6=10
+# 3+sum(2)-----3+3=6
+# 2+sum(1) --- 2+1=3
+# 1---1
+# first in last out
+                #EXAMPLE 1
+#sum of natural numbers using recursion
+def sum(n):
+    if n == 1: #base condition
+        return 1
+    
+    else: # recursive call
+        return n + sum (n-1)
+    
+n = int(input("Enter a number: "))
+print("Sum of number from 1 to", n, "is:", sum (n))
+
+                      #EXAMPLE 2
+# Factorial of a number using recursion
+def fact(n):
+
+    if n == 0: # Base condition
+        return 1
+
+    else: # recursive call
+        return n * fact(n-1)
+
+print("Factorial of 5 : ", fact(5))                      
