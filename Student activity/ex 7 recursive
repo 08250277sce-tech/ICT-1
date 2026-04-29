@@ -1,0 +1,12 @@
+def fun(x, y):
+    if x == 0: #base condition
+        return y
+    
+    else: # recursive call
+        return fun(x - 1, x + y)
+    
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+result = fun(x, y)
+
+print("Result:", result)
