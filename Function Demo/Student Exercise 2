@@ -1,0 +1,10 @@
+def pattern(n):
+    if n == 0:
+        return
+    
+    pattern(n - 1)   # call with smaller value
+    
+    print("* " * n)  # print after recursion (increasing)
+
+# Example
+pattern(4)
