@@ -1,0 +1,23 @@
+detail = open("student.txt", "w")
+detail.write("Namrata Gurung:11204003586\n")
+detail.write("Soniya Mongar:11810002411\n")
+detail.write("Sonam Tobgay:11510002253\n")
+detail.write("Pema Choden:11157721424\n")
+detail.write("Sonam Dorji:10202030404\n")
+detail.close()
+
+print("Dummy file 'student.txt' created successfully!")
+
+with open("student.txt", "r") as f:
+    students = f.readlines()
+search_name = input("Enter student name to search: ")
+
+found = False
+for line in students:
+    if search_name.lower() in line.lower():  
+        print("Student found")
+        found = True
+        break
+
+if not found:
+    print("Student not found in the file.")
